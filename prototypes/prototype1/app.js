@@ -7,7 +7,7 @@ document.getElementById('equal').addEventListener('click', function  result(){
 });
 
 
-function insert(val){
+function clickNumber(val){
   document.getElementById('result-bar').value+= val;
 
 }
