@@ -1,23 +1,18 @@
 
 document.getElementById('equal').addEventListener('click', function  result(){
     alert('result');
-    restInput();
 
 
 });
 
 
-function clickNumber(val){
-  document.getElementById('result-bar').value+= val;
+function clickNumber(number){
+  document.getElementById('result-bar').value+= number;
 
 }
 
-function takeNumbers(){
 
-
-}
-
-function restInput(){
+function resetInput(){
 
 
     document.getElementById('result-bar').value = " ";
