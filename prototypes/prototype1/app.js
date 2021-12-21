@@ -42,18 +42,19 @@ function insertNumber(number){
 function result(number){
 
   let resultInput  = document.getElementById("resultInput");
-  resultInput.value = " ";
+  resultInput.value = '';
 
   if(num1 != undefined && num2 != undefined && operation != undefined){
 
     resultInput.value = number;
 }else{
     if(num1String != undefined)
-    afficheur.value += xString 
+    resultInput.value +=  num1String;
+ 
     if(operation != undefined)
         resultInput.value += operation     
     if(num2String != undefined)
-        resultInput.value += yString 
+        resultInput.value += num2String 
 
     }
 
