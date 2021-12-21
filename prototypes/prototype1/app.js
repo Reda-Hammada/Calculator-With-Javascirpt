@@ -22,7 +22,7 @@ function Calculation(num1, num2, operation){
 }
 
 // 
-function ClickNumber(number){
+function insertNumber(number){
   if(num1 == undefined){
     if(num1String == undefined) num1String = '';
     num1String += number;
@@ -69,14 +69,14 @@ function Operation(operationParam){
   }
 }
 
-function Egale(){
+function equal(){
   num1 = parseFloat(num1String);
   num2 = parseFloat(num2String);
   solution = Calculer(num1,num2,operation);
   result(solution);
 }
 
-function Init(){
+function restCalc(){
   num1 = undefined;
   num2 = undefined;
   num1String = undefined;
