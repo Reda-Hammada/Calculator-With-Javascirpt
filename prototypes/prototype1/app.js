@@ -76,7 +76,7 @@ function equal(){
   result(solution);
 }
 
-function restCalc(){
+function resetCalc(){
   num1 = undefined;
   num2 = undefined;
   num1String = undefined;
