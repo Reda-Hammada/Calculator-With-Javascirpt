@@ -25,14 +25,13 @@ function Calculation(num1, num2, operation){
 function insertNumber(number){
   if(num1 == undefined){
     if(num1String == undefined) num1String = '';
-    num1String += number;
+      num1String += number;
   }
 
   else {
 
     if(num2String == undefined) num2String = '';
-
-      num2String += number;
+         num2String += number;
     }
 
     result();
@@ -52,15 +51,15 @@ function result(number){
     resultInput.value +=  num1String;
  
     if(operation != undefined)
-        resultInput.value += operation     
+      resultInput.value += operation;  
     if(num2String != undefined)
-        resultInput.value += num2String 
+        resultInput.value += num2String; 
 
     }
 
 }
 
-function Operation(operationParam){
+function Operator(operationParam){
   if(operation == undefined){
       operation = operationParam;
       num1 = parseFloat(num1String);
@@ -73,7 +72,7 @@ function Operation(operationParam){
 function equal(){
   num1 = parseFloat(num1String);
   num2 = parseFloat(num2String);
-  solution = Calculer(num1,num2,operation);
+  solution = Calculation(num1,num2,operation);
   result(solution);
 }
 
