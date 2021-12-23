@@ -8,12 +8,12 @@ function clickedNumbers(number){
 
     if(num1 == undefined){
         if(num1String == undefined) num1String =""
-        num1String = number;
+        num1String += number;
     }
 
     else{
         if(num2String == undefined) num2String =""
-        num2String = number;
+        num2String += number;
     }
 
     display();
@@ -96,4 +96,5 @@ function  resetCalc(){
     num2 =undefined;
     num1String = undefined;
     num2String = undefined;
+    operation = undefined;
 }
