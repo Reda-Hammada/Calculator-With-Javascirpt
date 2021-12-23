@@ -87,3 +87,13 @@ function calculation(num1, num2, operation){
 
         return result;
 }
+
+function  resetCalc(){
+
+    var displayInput = document.getElementById('display');
+    displayInput.value ="";
+    num1 = undefined;
+    num2 =undefined;
+    num1String = undefined;
+    num2String = undefined;
+}
