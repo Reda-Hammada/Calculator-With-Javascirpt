@@ -59,7 +59,7 @@ function equal(){
 }
 
 function reset(){
-    calculatrice.init();
+    calculatrice.reset();
     xString = undefined;
     yString = undefined;
     var displayInput = document.getElementById('displayBar');
