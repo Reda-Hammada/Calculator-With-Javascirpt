@@ -25,5 +25,21 @@ function onClickNumber(number){
 function display(){
     var displayInput = document.getElementById('displayBar');
     displayInput.value = "";
-    if()
+
+    if(calculatrice.x != undefined && calculatrice.y != undefined && calculatrice.operation != undefined){
+    displayInput.value = number;
+    }
+    else{
+        if(num1String != undefined){
+            displayInput.value += num1String;
+            
+        }
+        if(calculatrice.operation){
+            displayInput.value += calculatrice.operation
+
+        }
+        if(num2String != undefined){
+            displayInput.value += num2String;
+        }
+    }
 }
