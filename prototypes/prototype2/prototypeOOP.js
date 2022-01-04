@@ -43,3 +43,13 @@ function display(){
         }
     }
 }
+
+function operation(operationParam){
+    if(calculatrice.operation == undefined){
+         calculatrice.operation = operationParam;
+         calculatrice.x = parseFloat(xString);
+         display();
+    }else{
+        alert("vous avez déja choisi l'operqtion " + calculatrice.operation);
+    }
+}
