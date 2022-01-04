@@ -53,3 +53,15 @@ function operation(operationParam){
         alert("vous avez déja choisi l'operqtion " + calculatrice.operation);
     }
 }
+
+function equal(){
+
+}
+
+function reset(){
+    calculatrice.init();
+    xString = undefined;
+    yString = undefined;
+    var displayInput = document.getElementById('displayBar');
+    displayInput.value = "";
+}
