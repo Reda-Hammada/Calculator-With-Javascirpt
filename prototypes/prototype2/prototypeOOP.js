@@ -3,7 +3,7 @@ var num2String;
 
 
 function onClickNumber(number){
-    if(calculatrice.a == undefined) {
+    if(calculatrice.num1 == undefined) {
         if(num1String == undefined){
             num1String = ""
         }
@@ -26,7 +26,7 @@ function display(){
     var displayInput = document.getElementById('displayBar');
     displayInput.value = "";
 
-    if(calculatrice.x != undefined && calculatrice.y != undefined && calculatrice.operation != undefined){
+    if(calculatrice.num1 != undefined && calculatrice.num2 != undefined && calculatrice.operation != undefined){
     displayInput.value = number;
     }
     else{
@@ -47,7 +47,7 @@ function display(){
 function operation(operationParam){
     if(calculatrice.operation == undefined){
          calculatrice.operation = operationParam;
-         calculatrice.x = parseFloat(xString);
+         calculatrice.num1 = parseFloat(num1String);
          display();
     }else{
         alert("vous avez déja choisi l'operqtion " + calculatrice.operation);
@@ -55,13 +55,17 @@ function operation(operationParam){
 }
 
 function equal(){
+    calculatrice.num1 = parseFloat(num1String);
+    calculatrice.num2 = parseFloat(num2String);
+    calculatrice.calculate();
+    display(calculatrice.calculate());
 
 }
 
 function reset(){
     calculatrice.reset();
-    xString = undefined;
-    yString = undefined;
+    num1String = undefined;
+    num2String = undefined;
     var displayInput = document.getElementById('displayBar');
     displayInput.value = "";
 }
