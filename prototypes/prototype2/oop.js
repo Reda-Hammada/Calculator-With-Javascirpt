@@ -1,4 +1,4 @@
-class calculatrice{
+class Caluculatrice {
     #_num1;
     #_num2;
     #_result;
@@ -51,10 +51,5 @@ class calculatrice{
         return this.#_result;
     }
 
-    reset(){
-        this.#_num1 = undefined;
-        this.#_num2 = undefined; 
-        this.#_result = undefined;
-        this.#_operation = undefined;
-    }
+  
 }

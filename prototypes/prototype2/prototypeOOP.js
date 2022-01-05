@@ -1,27 +1,23 @@
+
 var num1String;
 var num2String;
-
+var calculatrice = new Caluculatrice();
 
 function onClickNumber(number){
-    if(calculatrice.num1 == undefined) {
+    if(calculatrice.num1 == undefined){
         if(num1String == undefined){
-            num1String = ""
+            num1String = "";
         }
-
         num1String += number;
-
-    } 
-    else {
-        if(num2String == undefined){
-            num2String += number;
-        }
-
-        bString += number;
     }
 
+    else{
+        if(num2String == undefined){
+            num2String+= number;
+        }
+    }
     display();
 }
-
 function display(){
     var displayInput = document.getElementById('displayBar');
     displayInput.value = "";

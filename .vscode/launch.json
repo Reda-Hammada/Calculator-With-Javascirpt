@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://127.0.0.1:5500/prototypes/prototype1/live-coding-2/livecoding.html",
+            "url": "http://127.0.0.1:5500/prototypes/prototype2/prototypeOOP.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
