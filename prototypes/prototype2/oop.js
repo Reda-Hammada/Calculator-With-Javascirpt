@@ -56,6 +56,7 @@ class Calculatrice{
         return this.#_result;
     
       }
+      
     reset(){
         this.#_num1 = undefined;
         this.#_num2 = undefined;

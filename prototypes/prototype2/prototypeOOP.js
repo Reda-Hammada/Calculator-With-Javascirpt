@@ -76,6 +76,6 @@ function reset(){
     num1String = undefined;
     num2String = undefined;
     var inputBar = document.getElementById('displayBar');
-    inputBar.value = undefined;
+    inputBar.value = "";
 }
 
