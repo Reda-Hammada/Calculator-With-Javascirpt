@@ -1,4 +1,4 @@
-class Caluculatrice {
+class Calculatrice {
     #_num1;
     #_num2;
     #_result;

@@ -1,8 +1,7 @@
 
 var num1String;
 var num2String;
-var calculatrice = new Caluculatrice();
-
+var calculatrice = new Calculatrice();
 function onClickNumber(number){
     if(calculatrice.num1 == undefined){
         if(num1String == undefined){
