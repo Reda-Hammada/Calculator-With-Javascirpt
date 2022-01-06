@@ -66,6 +66,7 @@ function operation(operator){
 function equal(){
     calculator.num1 = parseFloat(num1String);
     calculator.num2 = parseFloat(num2String);
+    calculator.calc();
     display(calculator.calc());
 
 }
@@ -76,6 +77,6 @@ function reset(){
     num1String = undefined;
     num2String = undefined;
     var inputBar = document.getElementById('displayBar');
-    inputBar.value = undefined;
+    inputBar.value = "";
 }
 
