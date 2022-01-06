@@ -1,20 +1,23 @@
+// class declaration 
 class Calculatrice{
     #_num1;
     #_num2;
     #_operation;
     #_result;
 
-    // getters and setters 
+
+    // getters and setters:
+
     get num1(){
         return this.#_num1;
     }
 
     set num1(value){
-        this.#_num1 = value;
+         this.#_num1 = value;
     }
 
     get num2(){
-        return this.#_num2;
+        return this.#_num2
     }
 
     set num2(value){
@@ -37,9 +40,9 @@ class Calculatrice{
         this.#_result = value;
     }
 
-    // calculation fucntion
-
-      calc() {
+    // cacluclation function 
+    
+    calc(){
         this.#_result = undefined;
 
         switch(this.#_operation){
@@ -54,17 +57,13 @@ class Calculatrice{
         }
 
         return this.#_result;
-    
-      }
+    }
 
-      // reset function
+    // reset input function:
     reset(){
         this.#_num1 = undefined;
         this.#_num2 = undefined;
-        this.#_result = undefined;
         this.#_operation = undefined;
+        this.#_result = undefined;
     }
 }
-
-    
-    
