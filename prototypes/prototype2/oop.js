@@ -1,9 +1,10 @@
-class Calculatrice {
+class Calculatrice{
     #_num1;
     #_num2;
-    #_result;
     #_operation;
+    #_result;
 
+    // getters and setters 
     get num1(){
         return this.#_num1;
     }
@@ -17,7 +18,6 @@ class Calculatrice {
     }
 
     set num2(value){
-
         this.#_num2 = value;
     }
 
@@ -26,7 +26,7 @@ class Calculatrice {
     }
 
     set operation(value){
-        this.#_operation = value
+        this.#_operation = value;
     }
 
     get result(){
@@ -37,8 +37,11 @@ class Calculatrice {
         this.#_result = value;
     }
 
-    calculate(){
-        this.#_reuslt = undefined;
+    // calculation fucntion
+
+      calc() {
+        this.#_result = undefined;
+
         switch(this.#_operation){
             case '+':
                 this.#_result = this.#_num1 + this.#_num2;
@@ -46,10 +49,22 @@ class Calculatrice {
             case '-':
                 this.#_result = this.#_num1 - this.#_num2;
                 break;
+            default:
+                break;
         }
 
         return this.#_result;
-    }
+    
+      }
 
-  
+      // reset function
+    reset(){
+        this.#_num1 = undefined;
+        this.#_num2 = undefined;
+        this.#_result = undefined;
+        this.#_operation = undefined;
+    }
 }
+
+    
+    

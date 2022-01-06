@@ -1,66 +1,81 @@
-
 var num1String;
 var num2String;
-var calculatrice = new Calculatrice();
+var calculator = new Calculatrice();
+
+// click number function 
 function onClickNumber(number){
-    if(calculatrice.num1 == undefined){
-        if(num1String == undefined){
-            num1String = "";
-        }
+
+    if(calculator.num1 == undefined){
+        if(num1String == undefined) num1String = ""
+        
+
         num1String += number;
     }
-
     else{
         if(num2String == undefined){
-            num2String+= number;
+           num2String = ""
         }
+        
+        num2String += number;
     }
+    
+
     display();
 }
-function display(){
-    var displayInput = document.getElementById('displayBar');
-    displayInput.value = "";
 
-    if(calculatrice.num1 != undefined && calculatrice.num2 != undefined && calculatrice.operation != undefined){
-    displayInput.value = number;
+// display function 
+
+function display(){
+
+    var inputBar = document.getElementById('displayBar');
+    inputBar.value = '';
+
+    if(calculator.num1 != undefined && calculator.num2 != undefined && calculator.operation != undefined){
+        inputBar.value = number;
+
     }
+
     else{
         if(num1String != undefined){
-            displayInput.value += num1String;
-            
+            inputBar.value += num1String;
         }
-        if(calculatrice.operation){
-            displayInput.value += calculatrice.operation
-
+        if(calculator.operation != undefined){
+            inputBar.value += calculator.operation;
         }
         if(num2String != undefined){
-            displayInput.value += num2String;
+            inputBar.value += num2String;
         }
     }
 }
 
-function operation(operationParam){
-    if(calculatrice.operation == undefined){
-         calculatrice.operation = operationParam;
-         calculatrice.num1 = parseFloat(num1String);
-         display();
-    }else{
-        alert("vous avez déja choisi l'operqtion " + calculatrice.operation);
+// function operation 
+
+function operation(operator){
+    if(calculator.operation == undefined){
+        calculator.operation = operator;
+        calculator.num1 = parseFloat(num1String);
+        display();
+    }
+
+    else{
+        alert("You have already chosen an operator");
     }
 }
+// equal function
 
 function equal(){
-    calculatrice.num1 = parseFloat(num1String);
-    calculatrice.num2 = parseFloat(num2String);
-    calculatrice.calculate();
-    display(calculatrice.calculate());
+    calculator.num1 = parseFloat(num1String);
+    calculator.num2 = parseFloat(num2String);
+    display(calculator.calc());
 
 }
 
+// reset display input function 
 function reset(){
-    calculatrice.reset();
+    calculator.reset()
     num1String = undefined;
     num2String = undefined;
-    var displayInput = document.getElementById('displayBar');
-    displayInput.value = "";
+    var inputBar = document.getElementById('displayBar');
+    inputBar.value = undefined;
 }
+
