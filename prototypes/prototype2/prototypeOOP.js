@@ -25,7 +25,7 @@ function onClickNumber(number){
 
 // display function 
 
-function display(){
+function display(number){
 
     var inputBar = document.getElementById('displayBar');
     inputBar.value = '';
