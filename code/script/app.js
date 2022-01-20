@@ -27,7 +27,7 @@ function onClickNumber(number){
 
 function display(number){
 
-    var inputBar = document.getElementById('displayBar');
+    var inputBar = document.getElementById('result-bar');
     inputBar.value = '';
 
     if(calculator.num1 != undefined && calculator.num2 != undefined && calculator.operation != undefined){
@@ -76,7 +76,7 @@ function reset(){
     calculator.reset()
     num1String = undefined;
     num2String = undefined;
-    var inputBar = document.getElementById('displayBar');
+    var inputBar = document.getElementById('result-bar');
     inputBar.value = "";
 }
 

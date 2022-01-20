@@ -49,6 +49,12 @@ class Calculatrice{
             case '-':
                 this.#_result = this.#_num1 - this.#_num2;
                 break;
+            case '*':
+                this.#_result = this.#_num1 * this.#_num2;
+                break;
+            case '/':
+                this.#_result = this.#_num1 / this.#_num2;
+                break;
             default:
                 break;
         }
