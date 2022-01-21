@@ -14,37 +14,39 @@
 </header>
 <main>
     <section class="calculator-container">
-        <div>
+        <div class="result-container">
             <input type = "text" id="result-bar">
         </div>
-        <div>
-            <div>
-                <button onclick="onClickNumber(1)">1</button>
-                <button onclick="onClickNumber(2)">2</button>
-                <button onclick="onClickNumber(3)">3</button>
-                <button onclick="operation('+')">+</button>
-                <button onclick="reset()">C</button>
-            
+        <div class="button-ultimate-container">
+            <div class="container-button1">
+                <div>
+                    <button onclick="onClickNumber(1)">1</button>
+                    <button onclick="onClickNumber(2)">2</button>
+                    <button onclick="onClickNumber(3)">3</button>
+                    <button onclick="operation('+')">+</button>
+                
+                </div>
+            </div>
+            <div class="container-button2">
+                <button onclick="onClickNumber(4)">4</button>
+                <button onclick="onClickNumber(5)">5</button>
+                <button onclick="onClickNumber(6)">6</button>
+                <button onclick="operation('-')">-</button>
+            </div>
+            <div class="container-button3">
+                <button onclick="onClickNumber(7)">7</button>
+                <button onclick="onClickNumber(8)">8</button>
+                <button onclick="onClickNumber(9)">9</button>
+                <button onclick="operation('*')">*</button>
+            </div>
+            <div class="container-button4">
+                <button id="reset" onclick="reset()">C</button>
+                <button onclick="onClickNumber(0)">0</button>
+                <button id="equal" onclick=" equal()">=</button>
+                <button onclick="operation('/')">/</button>
             </div>
         </div>
-        <div>
-            <button onclick="onClickNumber(4)">4</button>
-            <button onclick="onClickNumber(5)">5</button>
-            <button onclick="onClickNumber(6)">6</button>
-            <button onclick="operation('-')">-</button>
-        </div>
-        <div>
-            <button onclick="onClickNumber(7)">7</button>
-            <button onclick="onClickNumber(8)">8</button>
-            <button onclick="onClickNumber(9)">9</button>
-            <button onclick="operation('*')">*</button>
-        </div>
-        <div>
-            <button onclick="operation('-')">-</button>
-            <button onclick="onClickNumber(0)">0</button>
-            <button onclick=" equal()">=</button>
-            <button onclick="operation('/')">/</button>
-        </div>
+        
     </section>
 </main>
 <script src="script/oop.js"></script>
