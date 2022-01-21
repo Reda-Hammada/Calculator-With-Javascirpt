@@ -22,7 +22,7 @@ function Calculation(num1, num2, operation){
 }
 
 // 
-function insertNumber(number){
+function onClickNumber(number){
   if(num1 == undefined){
     if(num1String == undefined) num1String = '';
       num1String += number;
@@ -40,7 +40,7 @@ function insertNumber(number){
 
 function result(number){
 
-  let resultInput  = document.getElementById("resultInput");
+  let resultInput  = document.getElementById("result-bar");
   resultInput.value = '';
 
   if(num1 != undefined && num2 != undefined && operation != undefined){
@@ -65,7 +65,7 @@ function Operator(operationParam){
       num1 = parseFloat(num1String);
       result();
   }else{
-      alert("Vous avez déjà choisi l'opération " + operation);
+      alert("You have already chosen an operator" + operation);
   }
 }
 
@@ -76,13 +76,13 @@ function equal(){
   result(solution);
 }
 
-function resetCalc(){
+function reset(){
   num1 = undefined;
   num2 = undefined;
   num1String = undefined;
   num2String = undefined;
   operation = undefined;
-  let resultInput = document.getElementById("resultInput");
+  let resultInput = document.getElementById("result-bar");
   
   resultInput.value = "";
 }
